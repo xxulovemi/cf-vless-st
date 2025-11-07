@@ -8,8 +8,9 @@
 ### 二、脚本特色
 #### (一) 支持workers、pages、snippets部署，vless+ws+tls代理节点
 #### (二) 极大的丰富了反代功能的使用
-v2rayN客户端的单节点路径设置代理ip，通过代理客户端路径传递<br>
-支持IPV4、IPV6、域名三种方式（**端口为443时，可不写:port**）,socks5或http支持**用户名:密码或者为空**以下任选其一<br>
+v2rayN客户端的单节点路径设置代理ip，通过代理客户端路径传递，**以下任选其一**<br>
+支持IPV4、IPV6、域名三种方式（**端口为443时，可不写:port**）<br>
+支持socks5或http**用户名:密码或者为空**<br>
 | 代理类型 | IPv4形式 | IPv6形式 | 域名形式 |
 |------|------|------|------|
 | socks5全局代理 |s5all=IPv4:port|s5all=[IPv6]:port |s5all=domain:port|
