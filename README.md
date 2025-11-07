@@ -9,13 +9,13 @@
 #### (一) 支持workers、pages、snippets部署，vless+ws+tls代理节点
 #### (二) 极大的丰富了反代功能的使用
 v2rayN客户端的单节点路径设置代理ip，通过代理客户端路径传递<br>
-支持IPV4、IPV6、域名三种方式（**端口为443时，可不写:端口**）,以下任选其一<br>
+支持IPV4、IPV6、域名三种方式（**端口为443时，可不写:port**）,以下任选其一<br>
 | 代理类型 | IPv4形式 | IPv6形式 | 域名形式 |
 | :---: | :---: | :---: | :---: |
 | socks5全局代理 |s5all=IPV4:port|s5all=[IPV6]:port |s5all=domain:port|
 | http或者https全局代理 |httpall=IPV4:port|httpall=[IPV6]:port|httpall=domain:port|
 | http或者https代理cf网站 |http=IPV4:port|http=[IPV6]:port|http=domain:port|
-| http或者https代理cf网站 |`http://IPV4:port`|`http://[IPV6]:port`|`http://domain:port`|
+| http或者https代理cf网站 |`http://IPV4:port`|http://[IPV6]:port|`http://domain:port`|
 | socks5代理cf网站 |socks5=IPV4:port|socks5=[IPV6]:port|socks5=domain:port|
 | socks5代理cf网站 |socks5://IPV4:port|socks5://[IPV6]:port|socks5://domain:port|
 | proxyip代理cf网站 |pyip=IPV4:port|pyip=[IPV6]:port|pyip=domain:port|
