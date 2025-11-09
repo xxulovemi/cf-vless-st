@@ -508,7 +508,7 @@ async function 解析地址端口(hostSeg) {
     if (/\.william/i.test(hostSeg)) {
         const williamResult = await (async function (william) {
             try {
-                const response = await fetch(`https://doh.pub/dns-query?name=${william}&type=TXT`, { headers: { 'Accept': 'application/dns-json' } });
+                const response = await fetch(`https://1.1.1.1/dns-query?name=${william}&type=TXT`, { headers: { 'Accept': 'application/dns-json' } });
                 if (!response.ok) return null;
                 const data = await response.json();
                 const txtRecords = (data.Answer || []).filter(record => record.type === 16).map(record => record.data);
